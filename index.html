@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta Konverteri</title>
+    <style>
+        .card{
+            animation-name: fadein;
+            animation-duration: 0.5s;
+        }
+        #summa{
+            animation-name: fadein;
+            animation-duration: 0.5s;
+            display: none;
+        }
+        @keyframes fadein{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        #remEl{
+            animation-name: fadein;
+            animation-duration: 0.5s;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <div class="container bg-dark">
+        <div class="row offset-md-3 bg-dark">
+            <div class="card bg-dark text-white">
+                <h1 class="text-center">Valyuta Konverteri</h1>
+        <form id="money-form">
+            <input type="number" class="form-control mb-3 mt-3" id="inpVal" placeholder="Summani kiriting...">
+            <select class="currency-select form-control">
+                <option value="10414.88">USD</option>
+                <option value="12344.73">EURO</option>
+                <option value="136.69">RUB</option>
+              </select>
+              <div class="p-4 mt-3 alert alert-dark" id="summa"><span id="sum">0</span> so'mga teng !</div>
+              <button class="btn btn-success btn-block mt-3 p-3" id="btnShow">Natijani ko'rish</button>
+        </form>
+    </div>
+</div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
